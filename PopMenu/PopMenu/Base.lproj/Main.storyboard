@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15G20015" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5z-mf-LFv">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-jf-HaZ">
+                                        <rect key="frame" x="276" y="-2" width="49" height="49"/>
+                                        <animations/>
+                                        <state key="normal" backgroundImage="tabBar_publish_icon"/>
+                                        <state key="highlighted" backgroundImage="tabBar_publish_click_icon"/>
+                                        <connections>
+                                            <action selector="publishClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1TA-YM-95O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.29797584794123688" green="1" blue="0.96994783576222254" alpha="0.26964206560283688" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WNb-jf-HaZ" firstAttribute="centerX" secondItem="s5z-mf-LFv" secondAttribute="centerX" id="FjA-VK-Bme"/>
+                                    <constraint firstAttribute="height" constant="44" id="Y0s-fh-89f"/>
+                                    <constraint firstItem="WNb-jf-HaZ" firstAttribute="centerY" secondItem="s5z-mf-LFv" secondAttribute="centerY" id="uEI-nx-fdi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s5z-mf-LFv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZBs-SZ-VMp"/>
+                            <constraint firstAttribute="bottom" secondItem="s5z-mf-LFv" secondAttribute="bottom" id="jVD-Q9-ii3"/>
+                            <constraint firstAttribute="trailing" secondItem="s5z-mf-LFv" secondAttribute="trailing" id="l7P-CJ-H9X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabBar_publish_click_icon" width="49" height="49"/>
+        <image name="tabBar_publish_icon" width="49" height="49"/>
+    </resources>
+</document>
